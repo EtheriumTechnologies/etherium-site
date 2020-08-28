@@ -1,0 +1,139 @@
+/* body,
+html {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background: #f3eae5;
+  overflow-x: hidden;
+} */
+/*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+} */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 3.75vmin;
+  }
+}
+.section-header {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #333;
+}
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #31bbee;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+#team .member {
+  text-align: center;
+  /* margin-bottom: 20px; */
+
+  /* position: relative; */
+}
+
+#team .member img {
+  padding-bottom: 2rem;
+}
+#team .member .member-info {
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+#team .member .member-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+
+#team .member:hover .member-info {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #18d26e;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+#team p {
+  padding-top: 1.5rem;
+  text-align: left;
+  font-family: Mabry Pro, Arial, sans-serif;
+  font-size: 1.2rem;
+  word-spacing: 1px;
+}
