@@ -1806,7 +1806,7 @@ h3 {
   }
 }
 .home {
-  margin-top: 0.7rem;
+  margin-top: 1.2rem;
   background-color: #f3eae5;
 }
 /* @media (max-width: 600px) {
@@ -1814,11 +1814,11 @@ h3 {
     margin-top: 10rem;
   }
 } */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .hero__title {
-    font-size: ;
+    font-size: 0.1rem;
   }
-}
+} */
 h2 {
   font-family: Mabry Pro, Arial, sans-serif;
   font-size: 48px;
@@ -1871,15 +1871,17 @@ h3 {
 }
 @media (max-width: 1024px) {
   .hero {
-    height: 184.375vmin;
-    align-items: flex-end;
+    /*height: 184.375vmin;*/
+    height: 100vh;
+    align-items: flex-start;
+    /*align-items: flex-end*/
     padding: 0 0 6.875vmin;
     margin: 0 0 12.1875vmin;
   }
 }
 @media (max-width: 600px) {
   .hero h1 {
-    padding-top: 100px;
+    padding-top: 12px;
   }
 }
 .hero .container {
@@ -1912,7 +1914,7 @@ h3 {
   }
 }
 .hero__lead {
-  font-size: 24px;
+  font-size: 21px;
   line-height: 33px;
   color: #6c72ae;
   letter-spacing: 0;
@@ -1937,7 +1939,7 @@ h3 {
 }
 @media (max-width: 1024px) {
   .hero__button {
-    order: 4;
+    order: 3;
   }
 }
 .hero__button,
@@ -3253,7 +3255,7 @@ h3 {
 @media (max-width: 1024px) {
   .cta__wrapper {
     border-radius: 2.5vmin;
-    padding: 75.3125vmin 3.125vmin 4.375vmin;
+    padding: 49px 46px 40px 46px;
   }
 }
 .cta__title {
@@ -3290,7 +3292,8 @@ h3 {
 }
 @media (max-width: 1024px) {
   .cta__form-label {
-    display: none;
+    /* display: none; */
+    text-align: center;
   }
 }
 .cta__form-input {
@@ -3303,11 +3306,12 @@ h3 {
 @media (max-width: 1024px) {
   .cta__form-input {
     border-radius: 1.25vmin;
-    padding: 5.3125vmin;
+    padding: 10px 10px 10px;
     font-size: 5.625vmin;
     line-height: 6.5625vmin;
     text-align: center;
     margin: 0 0 2.5vmin;
+    font-size: 1.2rem;
   }
 }
 .cta__form-input::-webkit-input-placeholder {
@@ -3351,10 +3355,10 @@ h3 {
 }
 @media (max-width: 1024px) {
   .cta__form-button {
-    font-size: 6.25vmin;
+    font-size: 1.2rem;
     line-height: 7.5vmin;
     border-radius: 1.25vmin;
-    padding: 5vmin 5vmin 4.6875vmin;
+    padding: 10px 10px 10px;
   }
 }
 .cta__form-button:focus {
@@ -3427,6 +3431,9 @@ h3 {
 .footer {
   background: #000647;
   padding: 210px 0 133px;
+}
+.footer a {
+  text-decoration: none;
 }
 @media (max-width: 1024px) {
   .footer {
@@ -3553,9 +3560,247 @@ h3 {
 .footer--hide {
   display: none;
 }
+/* .sticky {
+  position: fixed;
+  top: 0;
+  padding: 1.2rem 0;
+  background: #171c5d;
+}
+
+#contact-back img {
+  border-radius: 10px;
+  margin-left: 1.5rem;
+  background: #ccc;
+} */
+/* @media (max-width: 500px) {
+  #contact h3 {
+    display: none;
+  }
+} */
+/* .contact-title {
+  color: #0e1889;
+}
+.contact-title span {
+  color: #dd59cf;
+}
+#contact-back form input {
+  border-radius: 10rem;
+}
+#contact-back form textarea {
+  border-radius: 2rem;
+} */
+
 .sticky {
   position: fixed;
   top: 0;
   padding: 1.2rem 0;
   background: #171c5d;
+}
+
+#contact-back img {
+  border-radius: 10px;
+  margin-left: 1.5rem;
+  background: #ccc;
+}
+/* @media (max-width: 500px) {
+  #contact h3 {
+    display: none;
+  }
+} */
+.contact-title {
+  color: #0e1889;
+}
+.contact-title span {
+  color: #dd59cf;
+}
+#contact-back form input {
+  border-radius: 10rem;
+}
+#contact-back form textarea {
+  border-radius: 2rem;
+}
+#contact .form-group label {
+  /* margin-left: 10px; */
+  display: none;
+}
+#contact input {
+  padding: 20px 0 20px 0;
+  margin-bottom: 1rem;
+}
+
+#contact textarea {
+  padding: 30px 0 30px 0;
+  margin-bottom: 1rem;
+}
+#contact button {
+  width: 40%;
+  padding: 8px 0;
+  font-size: 1.2rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background: #171c5d;
+}
+#contact button:hover {
+  background: #383b69;
+}
+@media (max-width: 768px) {
+  #contact button {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background: #171c5d;
+  }
+}
+#contact .custom-checkbox {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #contact .container {
+    max-width: 80%;
+    padding: 0 3.75vmin;
+  }
+}
+
+/* @media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 3.75vmin;
+  }
+} */
+a {
+  text-decoration: none;
+}
+.section-header {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #333;
+}
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.bottom-line {
+  height: 3px;
+  width: 3rem;
+  background: #171c5d;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+#team .member {
+  text-align: center;
+  /* margin-bottom: 20px; */
+
+  /* position: relative; */
+}
+
+#team .member img {
+  padding-bottom: 2rem;
+}
+#team .member .member-info {
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+#team .member .member-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+
+#team .member:hover .member-info {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #18d26e;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+#team p {
+  padding-top: 1.5rem;
+  text-align: left;
+  font-family: Mabry Pro, Arial, sans-serif;
+  font-size: 1.2rem;
+  word-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 430px;
+  }
+  .hero__lead {
+    font-size: 1rem;
+  }
+  .hero__title {
+    font-size: 1.8rem;
+    padding-top: 0;
+  }
+  .cols__3cols-text p {
+    font-size: 1.2rem;
+  }
+  #text-center {
+    text-align: center;
+  }
+  #team p {
+    font-size: 1rem;
+  }
 }

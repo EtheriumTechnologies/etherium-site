@@ -37,43 +37,6 @@
       property="og:image"
       content="https://moderne.st/og-image-moderne.png"
     />
-    <link
-      data-n-head="ssr"
-      rel="icon"
-      type="image/x-icon"
-      href="https://moderne.st/favicon.ico"
-    />
-    <link
-      data-n-head="ssr"
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://moderne.st/apple-touch-icon.png"
-    />
-    <link
-      data-n-head="ssr"
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="https://moderne.st/favicon-32x32.png"
-    />
-    <link
-      data-n-head="ssr"
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="https://moderne.st/favicon-16x16.png"
-    />
-    <link
-      data-n-head="ssr"
-      rel="manifest"
-      href="https://moderne.st/site.webmanifest"
-    />
-    <link
-      data-n-head="ssr"
-      rel="mask-icon"
-      href="https://moderne.st/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
     <link rel="preload" href="/_nuxt/7e9251a7f4f3e5107784.js" as="script" />
     <link rel="preload" href="/_nuxt/54cee66b1288abc26257.js" as="script" />
     <link rel="preload" href="/_nuxt/b2301d916e5c9b4d84c2.js" as="script" />
@@ -81,7 +44,10 @@
     <link rel="preload" href="/_nuxt/35a543640c00f353b316.js" as="script" />
     <link rel="preload" href="/_nuxt/401092a15bbdb54a26b0.js" as="script" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/team.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -97,136 +63,53 @@
     ></style>
   </head>
   <body>
+  
     <div data-server-rendered="true" id="__nuxt">
       <!---->
 
       <div id="__layout">
         <div>
-          <div class="nav sticky">
+		<div class="nav sticky">
             <div class="container">
-              <div class="nav__wrapper">
-                <a
+		          	<a
                   href="/"
                   class="nav__logo nuxt-link-exact-active nuxt-link-active"
                   ><img
-                    src="/images/illustrations/logo1.png"
+                    src="images/illustrations/logo1.png"
                     width="140px"
                     height="60px"
                     alt=""
+                    style="margin-left: -28px;"
                 /></a>
-                <div class="nav__blank">
-                  <div class="nav__burger">
-                    <div class="nav__burger-line"></div>
-                    <div class="nav__burger-line"></div>
-                    <div class="nav__burger-line"></div>
-                  </div>
-                  <div class="nav__mobile" style="display: none">
-                    <div class="nav__mobile-items">
-                      <div class="nav__mobile-item">
-                        <a href="/overview">Overview</a
-                        ><!---->
-                      </div>
-                      <div class="nav__mobile-item">
-                        <a href="/solutions">Products</a>
-                        <div class="nav__mobile-item-inner">
-                          <a
-                            href="/solutions/for-agencies"
-                            class="nav__mobile-item"
-                            >The Team</a
-                          ><a
-                            href="/solutions/for-brands"
-                            class="nav__mobile-item"
-                            >Contact Us</a
-                          ><a
-                            href="/solutions/for-startups"
-                            class="nav__mobile-item"
-                            >for Startups</a
-                          >
-                        </div>
-                      </div>
-                      <div class="nav__mobile-item">
-                        <a href="/pricing">Pricing</a
-                        ><!---->
-                      </div>
-                      <div class="nav__mobile-item">
-                        <a href="/insight-of-the-day"></a
-                        ><!---->
-                      </div>
-                      <div class="nav__mobile-item">
-                        <a href="/signin">Login</a
-                        ><!---->
-                      </div>
-                      <a href="/get-access" class="nav__mobile-item"
-                        >Get Access</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div
-                  itemscope="itemscope"
-                  itemtype="http://schema.org/SiteNavigationElement"
-                  class="nav__menu"
-                >
-                  <div>
-                    <a
-                      style="text-decoration: none"
-                      href="#overview"
-                      itemprop="url"
-                      class="nav__menu-item"
-                      >Overview</a
-                    ><!---->
-                  </div>
-                  <div>
-                    <a
-                      style="text-decoration: none"
-                      href="#products"
-                      itemprop="url"
-                      class="nav__menu-item"
-                      >Products</a
-                    >
-                    <div class="nav__menu-item-inner">
-                      <a
-                        style="text-decoration: none"
-                        href="/"
-                        class="nav__menu-item"
-                        >Health Care
-                      </a>
-                      <div class="nav__menu-item-inner-inner">
-                        <a
-                          style="text-decoration: none"
-                          href="/"
-                          class="nav__menu-item"
-                          >All Cures
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <a
-                      style="text-decoration: none"
-                      href="#team"
-                      itemprop="url"
-                      class="nav__menu-item"
-                      >Our Team</a
-                    ><!---->
-                  </div>
-                  <div>
-                    <a
-                      style="text-decoration: none"
-                      href="/contact.html"
-                      itemprop="url"
-                      class="nav__menu-item"
-                      >Contact Us</a
-                    ><!---->
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="topnav" id="myTopnav">
+			  
+				<div class="navv">
+				<a href=""></a>
+   <a href="#overview">Overview</a>
+   <div class="dropdown">
+    <a href="#products" class="dropbtn">Products 
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-content">
+      <a href="healthcare">Health Care</a>
+      <a href="#allcures">All Cures</a>
+      </div>
+  </div> 
+  <a href="#team">Our Team</a>
+  <a href="/contact.html">Contact Us</a>
+ <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+
+</div>
+          
+          
           </div>
+		  <a name="overview"></a>
           <div class="home" id="overview">
             <div class="hero">
               <div class="container">
-                <h1 class="hero__title">
+                <h1 class="hero__title mt-73">
                   Mission: To advance human endeavors through the use of
                   Technology
                 </h1>
@@ -260,7 +143,7 @@
                     <br />
                     <br />
 
-                    <p>
+                    <p style="font-size: 21px">
                       Centuries of human evolution has led us to build a wealth
                       of information on how to counter Diseases and Conditions
                       that impact us on a regular basis. Some of these diseases
@@ -289,10 +172,10 @@
                       height="200px"
                     />
                     <div class="cols__3cols-title">All Cures Info</div>
-                    <div class="cols__3cols-text">
+                    <div class="cols__3cols-text"><p>
                       The Information Portal by experts for Diseases, Conditions
                       and their Cures from across the globe and over the
-                      centuries
+                      centuries</p>
                     </div>
                   </div>
                   <div class="cols__3cols-item">
@@ -303,9 +186,9 @@
                       height="200px"
                     /><!---->
                     <div class="cols__3cols-title">Doctor Connect</div>
-                    <div class="cols__3cols-text">
+                    <div class="cols__3cols-text" ><p>
                       A portal for connecting with the right doctor to help you
-                      through your Cure Journey
+                      through your Cure Journey</p>
                     </div>
                   </div>
                   <div class="cols__3cols-item">
@@ -316,11 +199,11 @@
                       height="200px"
                     />
                     <div class="cols__3cols-title">Patient Central</div>
-                    <div class="cols__3cols-text">
+                    <div class="cols__3cols-text" ><p>
                       A repository for maintaining your health information,
                       which uses Blockchain for securing your info while using
                       Artificial Intelligence for Effective Health Management
-                      and Disease Prevention
+                      and Disease Prevention</p>
                     </div>
                   </div>
                   <!----><!----><!---->
@@ -338,9 +221,9 @@
                   id="text-center"
                 >
                   Our <span>Team</span>
-                </h2>
+                
                 <!-- </div> -->
-                <p>
+                <p style="font-size: 21px;">
                   The team at Etherium Technologies focusses on bringing the
                   latest advancements in technology to the fore. Etherium tries
                   to maintain a work-life harmony and a family like atmosphere
@@ -348,7 +231,7 @@
                   of technology with a team that is highly empathetic and for a
                   cause that will resonate with you, come, join us.
                 </p>
-
+              </h2>
                 <div class="row">
                   <div class="col-lg-4 col-md-6 wow fadeInUp">
                     <div class="member">
@@ -415,7 +298,7 @@
                       <div class="member-info">
                         <div class="member-info-content">
                           <h4>Ayush Pradhan</h4>
-                          <span>Intern Web Developer</span>
+                          <span>Web Developer</span>
                           <div class="social">
                             <a href="" target="_blank">
                               <i class="fa fa-instagram"></i>
@@ -453,8 +336,8 @@
 
                       <div class="member-info">
                         <div class="member-info-content">
-                          <h4>Arnav Koul</h4>
-                          <span>Full Stack Developer</span>
+                          <h4>xxxxxxxxx</h4>
+                          <span>Back-end Developer</span>
                           <div class="social">
                             <a href="" target="_blank">
                               <i class="fa fa-instagram"></i>
@@ -492,7 +375,7 @@
                     
                   > -->
                     <label for="mce-EMAIL" class="cta__form-label"
-                      >Enter your email address to reach Etherium</label
+                      >Enter your email address to reach Etherium Technologies</label
                     >
                     <div class="cta__form-group">
                       <input
@@ -537,7 +420,7 @@
                       height="60px"
                       alt=""
                   /></a>
-
+      
                   Etherium Technologies © 2020
                 </div>
                 <div class="footer__nav">
@@ -558,32 +441,33 @@
                       >Contact Us</a
                     >
                   </div>
-
+      
                   <div class="footer__nav-col">
                     <a
                       rel="noreferrer"
-                      href="#"
+                      href="https://twitter.com/EtheriumT"
                       target="_blank"
                       class="footer__nav-link"
-                      >Twitter<!----></a
+                      
+                      ><i class="fab fa-twitter"></i>  Twitter<!----></a
                     ><a
+                      rel="noreferrer"
+                      href="https://www.linkedin.com/company/67948511/"
+                      target="_blank"
+                      class="footer__nav-link"
+                      ><i class="fab fa-linkedin"></i>  LinkedIn<!----></a>
+                    <!-- ><a
                       rel="noreferrer"
                       href="#"
                       target="_blank"
                       class="footer__nav-link"
-                      >LinkedIn<!----></a
-                    ><a
+                      >Facebook</a> -->
+                      <a
                       rel="noreferrer"
-                      href="#"
+                      href="https://www.instagram.com/etherium.technologies/"
                       target="_blank"
                       class="footer__nav-link"
-                      >Facebook<!----></a
-                    ><a
-                      rel="noreferrer"
-                      href="#"
-                      target="_blank"
-                      class="footer__nav-link"
-                      >Instagram<!----></a
+                      ><i class="fab fa-instagram"></i>  Instagram<!----></a
                     >
                   </div>
                   <div class="footer__nav-col">
@@ -617,6 +501,17 @@
         routePath: "\u002F",
       };
     </script>
+	<script>
+	  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script>
+	
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"

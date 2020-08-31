@@ -9,13 +9,27 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
+  <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/c9238e9905.js"
+      crossorigin="anonymous"
+    ></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/team.css" />
+	<link rel="stylesheet" href="css/mobile.css" />
+
   <style>
     html,
     body{
       font-family: "Lato", sans-serif;
-      background: #f0f0f0;
+      background: #d3d3d3;
     }
     h1,
     h2,
@@ -23,7 +37,16 @@
     h4 {
       font-family: "Lato", sans-serif;
     }
-    .mySlides {
+     button[type="submit"] {
+  width: 100%;
+  background: #171c5d;
+  color: #f4f4f4;
+}
+    button[type="submit"]:hover {
+  color: #fff;
+  background: #043f58;
+}
+    /* .mySlides {
       display: none;
     }
     .w3-tag,
@@ -35,225 +58,140 @@
       width: 15px;
       padding: 0;
       margin-top: 6px;
-    }
+    } */
   </style>
   <body>
     <div class="nav sticky">
       <div class="container">
-        <div class="nav__wrapper">
-          <a href="/" class="nav__logo nuxt-link-exact-active nuxt-link-active"
+<a
+            href="/"
+            class="nav__logo nuxt-link-exact-active nuxt-link-active"
             ><img
-              src="/images/illustrations/logo1.png"
+              src="images/illustrations/logo1.png"
               width="140px"
               height="60px"
               alt=""
+              style="margin-left: -28px;"
           /></a>
-          <div class="nav__blank">
-            <div class="nav__burger">
-              <div class="nav__burger-line"></div>
-              <div class="nav__burger-line"></div>
-              <div class="nav__burger-line"></div>
-            </div>
-            <div class="nav__mobile" style="display: none">
-              <div class="nav__mobile-items">
-                <div class="nav__mobile-item">
-                  <a href="/overview">Overview</a
-                  ><!---->
-                </div>
-                <div class="nav__mobile-item">
-                  <a href="/solutions">Products</a>
-                  <div class="nav__mobile-item-inner">
-                    <a href="/solutions/for-agencies" class="nav__mobile-item"
-                      >The Team</a
-                    ><a href="/solutions/for-brands" class="nav__mobile-item"
-                      >Contact Us</a
-                    ><a href="/solutions/for-startups" class="nav__mobile-item"
-                      >for Startups</a
-                    >
-                  </div>
-                </div>
-                <div class="nav__mobile-item">
-                  <a href="/pricing">Pricing</a
-                  ><!---->
-                </div>
-                <div class="nav__mobile-item">
-                  <a href="/insight-of-the-day"></a
-                  ><!---->
-                </div>
-                <div class="nav__mobile-item">
-                  <a href="/signin">Login</a
-                  ><!---->
-                </div>
-                <a href="/get-access" class="nav__mobile-item">Get Access</a>
-              </div>
-            </div>
-          </div>
-          <div
-            itemscope="itemscope"
-            itemtype="http://schema.org/SiteNavigationElement"
-            class="nav__menu"
-          >
-            <div>
-              <a
-                style="text-decoration: none"
-                href="#overview"
-                itemprop="url"
-                class="nav__menu-item"
-                >Overview</a
-              ><!---->
-            </div>
-            <div>
-              <a
-                style="text-decoration: none"
-                href="#products"
-                itemprop="url"
-                class="nav__menu-item"
-                >Products</a
-              >
-              <div class="nav__menu-item-inner">
-                <a style="text-decoration: none" href="/" class="nav__menu-item"
-                  >Health Care
-                </a>
-                <div class="nav__menu-item-inner-inner">
-                  <a
-                    style="text-decoration: none"
-                    href="/"
-                    class="nav__menu-item"
-                    >All Cures
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <a
-                style="text-decoration: none"
-                href="#team"
-                itemprop="url"
-                class="nav__menu-item"
-                >Our Team</a
-              ><!---->
-            </div>
-            <div>
-              <a
-                style="text-decoration: none"
-                href="/contact.html"
-                itemprop="url"
-                class="nav__menu-item"
-                >Contact Us</a
-              ><!---->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="w3-content" style="max-width: 1100px; margin-bottom: 80px">
+<div class="topnav" id="myTopnav">
+  
+  <div class="navv">
+  <a href=""></a>
+<a href="/overview">Overview</a>
+<div class="dropdown">
+<a href="/solutions" class="dropbtn">Products 
+<i class="fa fa-caret-down"></i>
+</a>
+<div class="dropdown-content">
+<a href="healthcare">Health Care</a>
+<a href="#allcures">All Cures</a>
+</div>
+</div> 
+<a href="#team">Our Team</a>
+<a href="contact">Contact Us</a>
+<a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+
+</div>
+</div>
+<a name="overview"></a>
+
+<div id="contact-back">
+<div class="container">
+    <div class="w3-content my-5 py-3">
       <div class="w3-row-padding" id="about">
         <div class="w3-center w3-padding-64">
-          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16"
-            >Our Locations</span
-          >
+          <h1 class="contact-title">Our <span>Locations</span></h1>
+          <!-- <div class="bottom-line"></div> -->
         </div>
 
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
+        <div class="row">
+          <div class="pics col-md-6">
             <img
-              src="images/illustrations/fort copy.jpg"
-              alt="John"
-              style="width: 100%"
+              src=""
+              
+              width="557px"
+              height="346px"
+              style="width: 90%; background:#aaa;"
             />
-            <div class="w3-container">
-              <h3>Jammu</h3>
-            </div>
+            <div class="text-center">
+              <h4>Jammu</h4>
+            <p>Contact: +91 xxx xxxx xxx</p></div>
+          
           </div>
-        </div>
 
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
+        <div class="pics col-md-6">
             <img
-              src="images/illustrations/fort copy.jpg"
-              alt="Mike"
-              style="width: 100%"
+              src=""
+              
+              width="557px"
+              height="346px"
+              style="width: 90%; background:#aaa;"
             />
-            <div class="w3-container">
-              <h3>Noida</h3>
-            </div>
+            <div class="text-center">
+              <h4>Noida</h4>
+              <p>Contact: +91 xxx xxxx xxx</p></div>
+            
           </div>
-        </div>
+        </div> 
 
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
-            <img
-              src="images/illustrations/fort copy.jpg"
-              alt="Jane"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3>xxxxxxxxxxxxxx</h3>
-            </div>
-          </div>
-        </div>
+        
       </div>
 
       <!-- Contact -->
-      <div class="w3-center w3-padding-64" id="contact">
-        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16"
-          >We would be glad to assist you! Please drop us a message.</span
-        >
-      </div>
 
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
-          <div class="w3-half">
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder="First Name"
-              required
-              name="Name"
-            />
+
+
+  
+      <div class="w3-center w3-padding-64" >
+        <h3 class="contact-title">We would be glad to <span>assist</span> you!<br> Please drop us a <span>message</span></h3>
+        <!-- <div class="bottom-line"></div> -->
+      </div>
+    
+      <form id="contact" name="myForm">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Name</label>
+            <input type="text" name="name"class="form-control" placeholder="       Enter Name">
           </div>
-          <div class="w3-half">
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder="Last Name"
-              required
-              name="last name"
-            />
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control"  placeholder="       Enter Email">
           </div>
-          <br /><br /><br />
-          <div class="w3-half">
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder="Email"
-              required
-              name="email"
-            />
+          <div class="form-group col-md-6">
+            <label for="subject">Subject</label>
+            <input type="subject" class="form-control"  placeholder="       Enter Subject">
           </div>
-          <div class="w3-half">
-            <input
-              class="w3-input w3-border"
-              type=" phone number"
-              placeholder="Phone Number"
-              required
-              name="Number"
-            />
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Phone number</label>
+            <input type="phone-number" class="form-control"  placeholder="       Enter your Number">
           </div>
         </div>
-        <br />
-        <input
-          class="w3-input w3-border"
-          type="text"
-          placeholder="Message"
-          required
-          name="Message"
-        />
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
+        <div class="form-group">
+          <label>Message</label>
+          
+          <textarea class="form-control "
+              class="text-input message-input"
+              placeholder="       How can we help you ?"
+              name="message"
+            ></textarea>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+          <label class="custom-control-label" for="defaultUnchecked">I confirm, I have read and agree to Etherium Technologies <a>Privacy Policy</a></label>
+      </div>
+    <div style="margin-bottom:3rem "></div>
+        <button type="button" value="submit" onclick="clicked()" class="btn btn-primary" style="border-radius: 2rem">Submit</button>
       </form>
+
     </div>
+  </div>
+  </div>
+
+
+      
+
     <div class="footer">
       <div class="container">
         <div class="footer__wrapper">
@@ -292,28 +230,29 @@
             <div class="footer__nav-col">
               <a
                 rel="noreferrer"
-                href="#"
+                href="https://twitter.com/EtheriumT"
                 target="_blank"
                 class="footer__nav-link"
-                >Twitter<!----></a
+                
+                ><i class="fab fa-twitter"></i>  Twitter<!----></a
               ><a
+                rel="noreferrer"
+                href="https://www.linkedin.com/company/67948511/"
+                target="_blank"
+                class="footer__nav-link"
+                ><i class="fab fa-linkedin"></i>  LinkedIn<!----></a>
+              <!-- ><a
                 rel="noreferrer"
                 href="#"
                 target="_blank"
                 class="footer__nav-link"
-                >LinkedIn<!----></a
-              ><a
+                >Facebook</a> -->
+                <a
                 rel="noreferrer"
-                href="#"
+                href="https://www.instagram.com/etherium.technologies/"
                 target="_blank"
                 class="footer__nav-link"
-                >Facebook<!----></a
-              ><a
-                rel="noreferrer"
-                href="#"
-                target="_blank"
-                class="footer__nav-link"
-                >Instagram<!----></a
+                ><i class="fab fa-instagram"></i>  Instagram<!----></a
               >
             </div>
             <div class="footer__nav-col">
@@ -337,38 +276,6 @@
 </div>
 </div>
 
-    <script>
-      // Slideshow
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs((slideIndex += n));
-      }
-
-      function currentDiv(n) {
-        showDivs((slideIndex = n));
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demodots");
-        if (n > x.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        x[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " w3-white";
-      }
-    </script>
+    <script src="js/storeCookies.js"></script>
   </body>
 </html>
