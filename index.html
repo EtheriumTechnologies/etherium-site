@@ -60,63 +60,7 @@
     ></script>
     <style>
         
-       /* .dropbtn {
-        background-color: #3498DB;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-      } 
-       
-      .dropbtn:hover, .dropbtn:focus {
-        background-color: #2980B9;
-         color:#ff7e85;
-      }
       
-      
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #1715cd;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 18px;
-        text-decoration: none;
-        display: block;
-      }
-      
-      .subdd-home-content {
-          color:rgb(255, 127, 191);
-          padding: 12px 50px;
-          text-decoration: none;
-          display: none;
-      }
-      
-      .subdd-home-content a {
-          color:rgb(255, 127, 191);
-          padding: 0 50px;
-          text-decoration: none;
-          display: block;
-      }
-      
-      .dropdown a:hover {color: #333;}
-       
-      .show {display: block;}
-      
-      .hide {display: none;}
-       */
        .dropbtn {
   /* background-color: #3498DB; */
   color: white;
@@ -199,9 +143,9 @@
 			  
                   <div class="navv">
                   <a href=""></a>
-             <a href="/overview">Overview</a>
+             <a href="#overview">Overview</a>
              <div class="dropdown">
-                <button onclick="myFunc()" class="dropbtn">Products</button>
+                <button onclick="myFunc(), window.location.href = '#products';" class="dropbtn">Products</button>
              <div id="myDropdown" class="dropdown-content">
           
               <a href="#home" onmouseover="mysubFunction()" class="home_ni">Health Care</a>
@@ -212,7 +156,7 @@
                 </div>
             </div> 
             <a href="#team">Our Team</a>
-            <a href="contact">Contact Us</a>
+            <a href="/contact.html">Contact Us</a>
            <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
           </div>
           </div>
