@@ -58,9 +58,124 @@
       src="https://kit.fontawesome.com/c9238e9905.js"
       crossorigin="anonymous"
     ></script>
-    <style
-      data-vue-ssr-id="c3ae2b30:0 92c0cd9c:0 3191d5ad:0 20f4381e:0 4b118c69:0 0ace817b:0 50cf066e:0 065daedb:0 15c59dc7:0 aac6e95e:0 d8d7234e:0 3712b9a6:0 3921b725:0 4f2b976c:0 ce3daa1a:0"
-    ></style>
+    <style>
+        
+       /* .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      } 
+       
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+         color:#ff7e85;
+      }
+      
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #1715cd;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 18px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .subdd-home-content {
+          color:rgb(255, 127, 191);
+          padding: 12px 50px;
+          text-decoration: none;
+          display: none;
+      }
+      
+      .subdd-home-content a {
+          color:rgb(255, 127, 191);
+          padding: 0 50px;
+          text-decoration: none;
+          display: block;
+      }
+      
+      .dropdown a:hover {color: #333;}
+       
+      .show {display: block;}
+      
+      .hide {display: none;}
+       */
+       .dropbtn {
+  /* background-color: #3498DB; */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color:#ff7e85;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #171c5d;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #f1f1f1;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.subdd-home-content {
+    color:#f1f1f1;
+    padding: 12px 50px;
+    text-decoration: none;
+    display: none;
+}
+
+
+.subdd-home-content a {
+    color:#f1f1f1;
+    padding: 12px 50px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+/* .dropdown a:hover {background-color: #ddd;} */
+
+.show {display: block;}
+
+.hide {display: none;}
+    </style>
   </head>
   <body>
   
@@ -73,7 +188,6 @@
             <div class="container">
 		          	<a
                   href="/"
-                  class="nav__logo nuxt-link-exact-active nuxt-link-active"
                   ><img
                     src="images/illustrations/logo1.png"
                     width="140px"
@@ -81,31 +195,36 @@
                     alt=""
                     style="margin-left: -28px;"
                 /></a>
-  <div class="topnav" id="myTopnav">
+                <div class="topnav" id="myTopnav">
 			  
-				<div class="navv">
-				<a href=""></a>
-   <a href="#overview">Overview</a>
-   <div class="dropdown">
-    <a href="#products" class="dropbtn">Products 
-      <i class="fa fa-caret-down"></i>
-    </a>
-    <div class="dropdown-content">
-      <a href="healthcare">Health Care</a>
-      <a href="#allcures">All Cures</a>
-      </div>
-  </div> 
-  <a href="#team">Our Team</a>
-  <a href="/contact.html">Contact Us</a>
- <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-</div>
-
-</div>
+                  <div class="navv">
+                  <a href=""></a>
+             <a href="/overview">Overview</a>
+             <div class="dropdown">
+                <button onclick="myFunc()" class="dropbtn">Products</button>
+             <div id="myDropdown" class="dropdown-content">
           
-          
+              <a href="#home" onmouseover="mysubFunction()" class="home_ni">Health Care</a>
+                  <div id="myDropdownsubnav" class="subdd-home-content">
+                      <a href="#home1">All Cures</a>
+                      
+                  </div>
+                </div>
+            </div> 
+            <a href="#team">Our Team</a>
+            <a href="contact">Contact Us</a>
+           <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
           </div>
-		  <a name="overview"></a>
+          </div>
+                
+                </div>
+                </div>
+                <!-- <a name="overview"></a> -->
+
+
+
+
+
           <div class="home" id="overview">
             <div class="hero">
               <div class="container">
@@ -172,11 +291,14 @@
                       height="200px"
                     />
                     <div class="cols__3cols-title">All Cures Info</div>
-                    <div class="cols__3cols-text"><p>
+                    <h2 class="cols__main-title cols__main-title--top">
+                  
+
+                    <p>
                       The Information Portal by experts for Diseases, Conditions
                       and their Cures from across the globe and over the
                       centuries</p>
-                    </div>
+                  </h2>
                   </div>
                   <div class="cols__3cols-item">
                     <!----><img
@@ -185,11 +307,14 @@
                       width="300px"
                       height="200px"
                     /><!---->
+
                     <div class="cols__3cols-title">Doctor Connect</div>
-                    <div class="cols__3cols-text" ><p>
+                  <h2 class="cols__main-title cols__main-title--top">
+
+                    <p>
                       A portal for connecting with the right doctor to help you
                       through your Cure Journey</p>
-                    </div>
+                  </h2>
                   </div>
                   <div class="cols__3cols-item">
                     <!----><!----><img
@@ -199,12 +324,14 @@
                       height="200px"
                     />
                     <div class="cols__3cols-title">Patient Central</div>
-                    <div class="cols__3cols-text" ><p>
+                  <h2 class="cols__main-title cols__main-title--top">
+
+                    <p>
                       A repository for maintaining your health information,
                       which uses Blockchain for securing your info while using
                       Artificial Intelligence for Effective Health Management
                       and Disease Prevention</p>
-                    </div>
+                  </h2>
                   </div>
                   <!----><!----><!---->
                 </div>
@@ -425,32 +552,33 @@
                 </div>
                 <div class="footer__nav">
                   <div class="footer__nav-col">
-                    <a
-                      href="/"
+                    <a style="text-decoration:none;"
+                      href="#overview"
                       class="footer__nav-link nuxt-link-exact-active nuxt-link-active"
-                      >Home<!----></a
-                    >
-                    <a href="#overview" class="footer__nav-link"
                       >Overview<!----></a
-                    ><a href="#products" class="footer__nav-link"
+                    >
+                    <a style="text-decoration:none;" href="#products" class="footer__nav-link"
                       >Products<!----></a
-                    ><a
+                    ><a style="text-decoration:none;" href="#team" class="footer__nav-link"
+                      >Team<!----></a
+                    ><a style="text-decoration:none;"
                       rel="noreferrer"
                       href="/contact.html"
                       class="footer__nav-link"
                       >Contact Us</a
                     >
+                    <span class="footer-line"></span>
                   </div>
       
                   <div class="footer__nav-col">
-                    <a
+                    <a style="text-decoration:none;"
                       rel="noreferrer"
                       href="https://twitter.com/EtheriumT"
                       target="_blank"
                       class="footer__nav-link"
                       
                       ><i class="fab fa-twitter"></i>  Twitter<!----></a
-                    ><a
+                    ><a style="text-decoration:none;"
                       rel="noreferrer"
                       href="https://www.linkedin.com/company/67948511/"
                       target="_blank"
@@ -462,26 +590,30 @@
                       target="_blank"
                       class="footer__nav-link"
                       >Facebook</a> -->
-                      <a
+                      <a style="text-decoration:none;"
                       rel="noreferrer"
                       href="https://www.instagram.com/etherium.technologies/"
                       target="_blank"
                       class="footer__nav-link"
                       ><i class="fab fa-instagram"></i>  Instagram<!----></a
                     >
+                    <span class="footer-line"></span>
+
                   </div>
                   <div class="footer__nav-col">
-                    <a
+                    <a style="text-decoration:none;"
                       rel="noreferrer"
                       href="#"
                       target="_blank"
                       class="footer__nav-link"
                       >Careers</a
-                    ><a href="#" class="footer__nav-link"
+                    ><a style="text-decoration:none;" href="#" class="footer__nav-link"
                       >Terms of Use<!----></a
-                    ><a href="# " class="footer__nav-link"
+                    ><a style="text-decoration:none;" href="# " class="footer__nav-link"
                       >Privacy Policy<!----></a
                     >
+                    <!-- <div class="footer-line"></div> -->
+
                   </div>
                 </div>
               </div>
@@ -508,6 +640,27 @@
     x.className += " responsive";
   } else {
     x.className = "topnav";
+  }
+}
+function myFunc() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+/* When the user clicks on the sub nav button, 
+toggle between hiding and showing the subnav dropdown content */
+function mysubFunction() {
+    document.getElementById("myDropdownsubnav").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content topnav");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
 }
 	</script>
