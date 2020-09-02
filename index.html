@@ -87,6 +87,7 @@
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-top:50px;
 }
 
 .dropdown-content a {
@@ -145,8 +146,8 @@
                   <a href=""></a>
              <a href="#overview">Overview</a>
              <div class="dropdown">
-                <button onclick="myFunc(), window.location.href = '#products';" class="dropbtn">Products</button>
-             <div id="myDropdown" class="dropdown-content">
+                <a href="#products" onclick="myFunc()" class="button dropbtn">Products</a>
+             <div id="myDropdown" class="dropdown-content" >
           
               <a href="#home" onmouseover="mysubFunction()" class="home_ni">Health Care</a>
                   <div id="myDropdownsubnav" class="subdd-home-content">

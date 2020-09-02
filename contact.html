@@ -73,6 +73,7 @@
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-top:50px;
 }
 
 .dropdown-content a {
@@ -105,19 +106,6 @@
 .show {display: block;}
 
 .hide {display: none;}
-    /* .mySlides {
-      display: none;
-    }
-    .w3-tag,
-    .fa {
-      cursor: pointer;
-    }
-    .w3-tag {
-      height: 15px;
-      width: 15px;
-      padding: 0;
-      margin-top: 6px;
-    } */
   </style>
   <body>
     <div class="nav sticky">
@@ -138,9 +126,14 @@
             <a href=""></a>
        <a href="/index.html#overview">Overview</a>
        <div class="dropdown">
-          <button onclick="myFunc(), window.location.href = '/index.html#products';" class="dropbtn">Products</button>
-       <div id="myDropdown" class="dropdown-content">
-    
+          <!-- <button onclick="myFunc(), window.location.href = '/index.html#products';" class="dropbtn">Products</button>
+       <div id="myDropdown" class="dropdown-content"> -->
+        
+
+        <a href="/index.html#products" onclick="myFunc()" class="button dropbtn">Products</a>
+        <div id="myDropdown" class="dropdown-content">
+
+
         <a href="#home" onmouseover="mysubFunction()" class="home_ni">Health Care</a>
             <div id="myDropdownsubnav" class="subdd-home-content">
                 <a href="#home1">All Cures</a>
@@ -388,6 +381,6 @@ window.onclick = function(event) {
       crossorigin="anonymous"
     ></script> -->
     <script src="js/main.js"></script>
-    <script src="js/storeCookies.js"></script>
+    <!-- <script src="js/storeCookies.js"></script> -->
   </body>
 </html>
